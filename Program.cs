@@ -9,10 +9,16 @@ namespace HackerHank.Console
     {
         static void Main(string[] args)
         {
-            
+            TimeConversion();
         }
 
-
+        #region TimeConversion
+        private static void TimeConversion()
+        {
+            //WriteLine(TimeConversionProblem.TimeConversion("07:05:45PM"));
+            WriteLine(TimeConversionProblem.TimeConversion("06:40:03AM"));            
+        }
+        #endregion
 
         #region AppleAndOrange
         private static void AppleAndOrange()
