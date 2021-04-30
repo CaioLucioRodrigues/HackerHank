@@ -9,11 +9,10 @@ namespace HackerHank.Console.Problems
         // output 19:05:45
         public static string TimeConversion(string s)
         {
-            var militaryTime = string.Empty;
-            var morningOrAfternoon = Regex.Replace(s, "[^a-zA-Z]", "");
+            var militaryTime = string.Empty;            
             var hour = Convert.ToInt32(s.Substring(0, 2));
 
-            if (morningOrAfternoon == "AM")
+            if (Regex.Replace(s, "[^a-zA-Z]", "") == "AM")
             {
                 if (hour == 12)
                     militaryTime = "00";
@@ -26,10 +25,8 @@ namespace HackerHank.Console.Problems
                     militaryTime = "12";
                 else
                     militaryTime = (hour + 12).ToString();
-            }
-
-            militaryTime += s.Substring(2, 6);
-            return militaryTime;        
+            }            
+            return militaryTime += s.Substring(2, 6);
         }
     }
 }
