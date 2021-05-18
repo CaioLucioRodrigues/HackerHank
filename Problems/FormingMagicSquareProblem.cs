@@ -12,11 +12,6 @@ namespace HackerHank.Console.Problems
 
             integers = integers.OrderBy(i => i).ToList();
 
-            //Pego os numeros que nao tem
-            //Calculo as possibilidades de troca
-            //Aplico as possibilidades no matriz            
-            //Teste
-
             return 0;
         }
     }

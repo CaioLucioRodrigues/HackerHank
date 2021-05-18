@@ -1,6 +1,7 @@
 ﻿using HackerHank.Console.Problems;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using static System.Console;
 
 namespace HackerHank.Console
@@ -9,8 +10,18 @@ namespace HackerHank.Console
     {
         static void Main(string[] args)
         {
-            TimeConversion();
+            GradingStudents();
         }
+
+        #region GradingStudents
+        private static void GradingStudents()
+        {
+            var result = GradingStudentsProblem.GradingStudents(
+                new List<int> {73, 67, 38, 33});
+
+            result.ForEach(i => WriteLine(i.ToString()));            
+        }
+        #endregion
 
         #region TimeConversion
         private static void TimeConversion()
