@@ -10,8 +10,17 @@ namespace HackerHank.Console
     {
         static void Main(string[] args)
         {
-            GradingStudents();
+            NumberLineJumps();
         }
+
+        #region NumberLineJumps
+        private static void NumberLineJumps()
+        {
+            WriteLine(NumberLineJumpsProblem.Kangaroo(0, 3, 4, 2));
+            WriteLine(NumberLineJumpsProblem.Kangaroo(0, 2, 5, 3));
+            WriteLine(NumberLineJumpsProblem.Kangaroo(21, 6, 47, 3));
+        }
+        #endregion
 
         #region GradingStudents
         private static void GradingStudents()
