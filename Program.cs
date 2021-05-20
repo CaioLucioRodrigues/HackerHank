@@ -10,8 +10,16 @@ namespace HackerHank.Console
     {
         static void Main(string[] args)
         {
-            NumberLineJumps();
+            BreakingRecords();
         }
+
+        #region BreakingRecords
+        private static void BreakingRecords()
+        {
+            BreakingRecordsProblem.BreakingRecords(new List<int> { 10, 5, 20, 20, 4, 5, 2, 25, 1 })
+                .ForEach(e => WriteLine(e.ToString()));
+        }
+        #endregion
 
         #region NumberLineJumps
         private static void NumberLineJumps()
