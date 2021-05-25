@@ -10,8 +10,16 @@ namespace HackerHank.Console
     {
         static void Main(string[] args)
         {
-            BreakingRecords();
+            SubarrayDivision();
         }
+
+        #region SubarrayDivision
+        private static void SubarrayDivision()
+        {
+            var result = SubarrayDivisionProblem.Birthday(new List<int> { 1, 2, 1, 3, 2 }, 3, 2);
+            WriteLine(result.ToString());
+        }
+        #endregion
 
         #region BreakingRecords
         private static void BreakingRecords()
