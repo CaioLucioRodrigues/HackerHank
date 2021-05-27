@@ -10,8 +10,16 @@ namespace HackerHank.Console
     {
         static void Main(string[] args)
         {
-            SubarrayDivision();
+            DivisibleSumPairs();
         }
+
+        #region DivisibleSumPairs
+        private static void DivisibleSumPairs()
+        {
+            var resultado = DivisibleSumPairsProblem.DivisibleSumPairs(6, 3, new List<int>() { 1, 3, 2, 6, 1, 2 });
+            WriteLine(resultado.ToString());
+        }
+        #endregion
 
         #region SubarrayDivision
         private static void SubarrayDivision()
