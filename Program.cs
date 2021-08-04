@@ -10,7 +10,7 @@ namespace HackerHank.Console
     {
         static void Main(string[] args)
         {
-            DivisibleSumPairs();
+            WriteLine(DayOfTheProgrammerProblem.DayOfProgrammer(1916));
         }
 
         #region DivisibleSumPairs
@@ -50,16 +50,16 @@ namespace HackerHank.Console
         private static void GradingStudents()
         {
             var result = GradingStudentsProblem.GradingStudents(
-                new List<int> {73, 67, 38, 33});
+                new List<int> { 73, 67, 38, 33 });
 
-            result.ForEach(i => WriteLine(i.ToString()));            
+            result.ForEach(i => WriteLine(i.ToString()));
         }
         #endregion
 
         #region TimeConversion
         private static void TimeConversion()
-        {   
-            WriteLine(TimeConversionProblem.TimeConversion("06:40:03AM"));            
+        {
+            WriteLine(TimeConversionProblem.TimeConversion("06:40:03AM"));
         }
         #endregion
 
@@ -103,4 +103,14 @@ namespace HackerHank.Console
         }
         #endregion
     }
+
+
+
 }
+
+
+
+
+
+
+
