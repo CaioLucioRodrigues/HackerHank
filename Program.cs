@@ -10,7 +10,7 @@ namespace HackerHank.Console
     {
         static void Main(string[] args)
         {
-            MigratoryBirdsProblem.MigratoryBirds(new List<int> { 1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4, });
+            WriteLine(DrawingBookProblem.FromEnd(6, 5));
         }
 
         #region DivisibleSumPairs
