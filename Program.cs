@@ -12,7 +12,7 @@ namespace HackerHank.Console
     {
         static void Main(string[] args)
         {
-            WriteLine(CountingValleysProblemn.CountingValleys(0, "UDDDUDUU").ToString());
+            WriteLine(CatAndMouseProblem.CatAndMouse(1, 3, 2));
         }
 
         #region DivisibleSumPairs
