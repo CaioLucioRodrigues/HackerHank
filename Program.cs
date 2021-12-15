@@ -12,7 +12,7 @@ namespace HackerHank.Console
     {
         static void Main(string[] args)
         {
-            WriteLine(CatAndMouseProblem.CatAndMouse(1, 3, 2));
+            WriteLine(EletronicsShopProblem.GetMoneySpent(new int[] { 3, 1 }, new int[] { 5, 2, 8 }, 10));
         }
 
         #region DivisibleSumPairs
