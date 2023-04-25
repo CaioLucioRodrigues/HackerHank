@@ -12,8 +12,17 @@ namespace HackerHank.Console
     {
         static void Main(string[] args)
         {
-            WriteLine(EletronicsShopProblem.GetMoneySpent(new int[] { 3, 1 }, new int[] { 5, 2, 8 }, 10));
+            PickingNumbers();
         }
+
+        #region PickingNumbers
+        private static void PickingNumbers()
+        {
+            var min = PickingNumbersProblem.MinSequence(new List<int> { 256741038, 623958417, 467905213, 714532089, 938071625 });
+            var max = PickingNumbersProblem.MaxSequence(new List<int> { 256741038, 623958417, 467905213, 714532089, 938071625 });
+            WriteLine($"{min} {max}");
+        }
+        #endregion
 
         #region DivisibleSumPairs
         private static void DivisibleSumPairs()
