@@ -12,7 +12,10 @@ namespace HackerHank.Console
     {
         static void Main(string[] args)
         {
-            PickingNumbers();
+            var heigths = new List<int> { 1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7 };
+            var word = "zaba";
+            var value = DesignerPdfViewerProblem.DesignerPdfViewer(heigths, word);
+            WriteLine(value);
         }
 
         #region PickingNumbers
